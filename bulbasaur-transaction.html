@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YOUR TRANSACTION</title>
+</head>
+<body>
+<h1>YOUR TRANSACTION</h1>
+<h2>Bulbasaur</h2>
+​
+<table border ="10">
+	<thead>
+		<tr>
+			<th>Image</th>
+			<th>Quantity</th>
+			<th>Price</th>
+			<th>Total</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><img src="http://img4.wikia.nocookie.net/__cb20140328190757/pokemon/images/thumb/2/21/001Bulbasaur.png/200px-001Bulbasaur.png">Bulbasaur</td>
+			<td>1</td>
+			<td>20.000 IDR</td>
+			<td>20.000 IDR</td>
+		</tr>
+		
+​
+</table>
+
+<h3>Payment Information</h3>
+
+<form action="....." method="POST">
+    <section class="name">
+    <label for="Card Holder">Card Holder</label>
+    <input type="text" name="Card Holder" id="Card Holder" required >
+        <br><br>
+    <label for="amount">Card Number</label>
+    <input type="number" name="Card Number=" required pattern="[0-9]{14,16}" required minlength="14" maxlength="16" required>
+        <br>
+<h4>Expired Date</h4>
+       
+  <label for="month">Month</label>
+  <select name="month" id="month" required>
+    <option value=" ">  </option>
+    <option value="01">01</option>
+    <option value="02">02</option>
+    <option value="03">03</option>
+    <option value="04">04</option>
+    <option value="05">05</option>
+    <option value="06">06</option>
+    <option value="07">07</option>
+    <option value="08">08</option>
+    <option value="09">08</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+
+  </select>
+    
+
+    <label for="year">Year</label>
+    <select required name="year" id="year" min="2019" max="2023" > 
+    <option value=" ">  </option>
+    <option value="2019">2019</option>
+    <option value="2020">2010</option>
+    <option value="2021">2021</option>
+    <option value="2022">2022</option>
+    <option value="2023">2023</option>
+
+    
+    
+
+  </select>
+</section>
+
+        <br>
+        <input type="submit" value="Check Out">
+​
+</body>
+</html>
