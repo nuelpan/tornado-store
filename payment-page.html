@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<title>Payment Information</title>
+    <head>
+     
+        <header><img id="logo" src="https://icon-library.net/images/tornado-icon-png/tornado-icon-png-12.jpg"></header>
+        <link href="payment-page.css" type="text/css" rel="stylesheet">
+
+
+    </head>
+      
+    <body>
+      <hr>
+      <div class="header-site">
+        <h1>Hello , Your Total Payment is Rp 86.744.000 </h1>
+      </div>
+      <hr>
+
+      <h2>Choose your payment method</h2>
+
+      <form action="terima-kasih.html" method="POST">
+          <input type="radio" name="payment" id="card" value="card">
+          <label class="labelpanjang" card>Pay With Your Credit Card</label>
+        <section class="name">
+          <label for="cardholder">Card Holder</label>
+          <input type="text" name="cardholder" id="cardholder" >
+          <br><br>
+          <label for="amount">Card Number</label>
+          <input type="text" name="Card Number=">
+          <br>
+      <h2>Expired Date</h2>
+       
+        <label class="labelpendek" for="month">Month</label>
+        <select name="month" id="month" >
+          <option value=" "></option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">08</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+        
+
+        <label class="labelpendek" for="year">Year</label>
+          <select name="year" id="year" min="2019" max="2023" > 
+            <option value=" "></option>
+            <option value="2019">2019</option>
+            <option value="2020">2010</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+          </select>
+          <hr>
+          <br>
+          <input type="radio" name="payment" id="mandiri" value="bank">
+            <label class="labelpanjang" for="mandiri">VA Mandiri 123456789</label>
+            <hr>
+            <input type="radio" name="payment" id="bca" value="bank">
+            <label class="labelpanjang" for="bca">VA BCA 987654321</label>
+            <hr>
+          <input type="submit" value="Check Out">
+        </form>
+​
+    </body>
+    <footer>
+      Tornado Store
+    </footer>
+</html>
