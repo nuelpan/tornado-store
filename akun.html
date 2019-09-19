@@ -3,78 +3,92 @@
 <head>
     <title>New Customer</title>
     <style type="text/css" media="screen">
-        
-        header {background-color: beige; align-content: center}
+        img {width:90px; float:left; margin-left:10px; padding-top: 10px;}
+        header {clear:float; background-color: #708090; font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color: #88ccf1; }
+        label {font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}        
+        body {background-color: #eeeeee}
+        h1 {padding-top: 10px; }
+        h3 {padding-bottom: 10px;}
+        .clabelfront { display:inline-block; width: 100px;}
+        .cinputfront { border-radius: 10px; height: 20px;}
+        .cinputfront-fml { height: 20px;}
+        textarea {border-radius: 10px;}
+        .clabelbox { display:inline-block; width: 100px;}
+        footer { background-color: #708090; color: #88ccf1; padding: 1px 0px 1px 0px; text-align: center; margin-top: 20px;}
+        main { margin-left: 20px;}
+        .cbutton { height: 30px; width:100px; border:none; background-color: powderblue;}
     </style>
 </head>
 <body>
     <header>
+        <img src="https://icon-library.net/images/tornado-icon-png/tornado-icon-png-12.jpg">
         <h1>Welcome, dear Customer</h1>
         <h3>Enjoy to fill the data, so we can know you well.</h3>
     </header>
     <main>
         <form action="./done.html" method="POST">
-            <label for="cname">Name</label>
-            <input type="text" name="cname" id="cname" required>
+            <label for="cname" class="clabelfront">Name</label>
+            <input type="text" name="cname" id="cname" required class="cinputfront">
             <br><br>
-            <label>Sex</label>
-            <input type="radio" id="cman" name="csex" value="man">
+            <label class="clabelfront">Sex</label>
+            <input type="radio" id="cman" name="csex" value="man" class="cinputfront">
             <label for="cman">Man</label>
-            <input type="radio" id="cfemale" name="csex" value="female">
+            <input type="radio" id="cfemale" name="csex" value="female" class="cinputfront-fml">
             <label for="cfemale">Female</label>
             <br><br>
-            <label for="cusername">User Name</label>
-            <input type="text" name="cusername" id="cusername" required>
+            <label for="cusername" class="clabelfront">User Name</label>
+            <input type="text" name="cusername" id="cusername" required class="cinputfront">
             <br><br>
-            <label for="cpasswd">Password</label>
-            <input type="password" id="cpasswd" name="cpasswd" required>
+            <label for="cpasswd" class="clabelfront">Password</label>
+            <input type="password" id="cpasswd" name="cpasswd" required class="cinputfront">
             <br><br>
-            <label for="caddress">Address</label>
-            <textarea id="caddress" name="caddress" rows="5" cols="50" required minlength="30" maxlength="250"></textarea>
+            <label for="caddress" class="clabelfront">Address</label>
+            <textarea id="caddress" name="caddress" rows="5" cols="50" required minlength="30" maxlength="250" ;></textarea>
             <br><br>
-            <label for="cphone">Phone</label>
-            <input type="tel" id="cphone" name="cphone" required pattern="[0-9]{5}">
+            <label for="cphone" class="clabelfront">Phone</label>
+            <input type="tel" id="cphone" name="cphone" required pattern="[0-9]{5,14}" class="cinputfront">
             <br><br>
-            <label for="cemail">Email</label>
-            <input type="email" id="cemail" name="cemail" required>
+            <label for="cemail" class="clabelfront">Email</label>
+            <input type="email" id="cemail" name="cemail" required class="cinputfront">
             <br><br>
-            <label for="cwebsite">Website</label>
-            <input type="url" id="cwebsite" name="cwebsite">
+            <label for="cwebsite" class="clabelfront">Website</label>
+            <input type="url" id="cwebsite" name="cwebsite" class="cinputfront">
             <br><br>
             <h4>What Category do You prefer ?</h4>
             <input type="checkbox" id="claptop" name="ccategory">
-            <label for="claptop">Laptop</label>
+            <label for="claptop" class="clabelbox">Laptop</label>
             <input type="checkbox" id="cmonitor" name="ccategory">
-            <label for="cmonitor">Monitor</label>
+            <label for="cmonitor" class="clabelbox">Monitor</label>
             <input type="checkbox" id="cdisk" name="ccategory">
-            <label for="cdisk">Disk</label>
+            <label for="cdisk" class="clabelbox">Disk</label>
             <br><br>
             <input type="checkbox" id="cdesktop" name="ccategory">
-            <label for="cdesktop">Desktop</label>
+            <label for="cdesktop" class="clabelbox">Desktop</label>
             <input type="checkbox" id="ckeyboard" name="ccategory">
-            <label for="ckeyboard">Keyboard</label>
+            <label for="ckeyboard" class="clabelbox">Keyboard</label>
             <input type="checkbox" id="cspeaker" name="ccategory">
-            <label for="cspeaker">Speaker</label>
+            <label for="cspeaker" class="clabelbox">Speaker</label>
             <br><br>
             <input type="checkbox" id="cmemory" name="ccategory">
-            <label for="cmemory">Memory</label>
+            <label for="cmemory" class="clabelbox">Memory</label>
             <input type="checkbox" id="cmouse" name="ccategory">
-            <label for="cmouse">Mouse</label>
+            <label for="cmouse" class="clabelbox">Mouse</label>
             <input type="checkbox" id="cfan" name="ccategory">
-            <label for="cfan">Fan</label>
+            <label for="cfan" class="clabelbox">Fan</label>
             <br><br>
             <input type="checkbox" id="cvga" name="ccategory">
-            <label for="cvga">VGA</label>
+            <label for="cvga" class="clabelbox">VGA</label>
             <input type="checkbox" id="cmainboard" name="ccategory">
-            <label for="cmainboard">Mainboard</label>
+            <label for="cmainboard" class="clabelbox">Mainboard</label>
             <input type="checkbox" id="ccasing" name="ccategory">
-            <label for="ccasing">Casing</label>
+            <label for="ccasing" class="clabelbox">Casing</label>
             <br><br>
-            <input type="submit" value="Done">
+            <input type="submit" value="Done" class="cbutton">
         </form>
     </main>
     <footer>
-
+        <p>Tornado Store</p>
     </footer>
 </body>
 </html>
