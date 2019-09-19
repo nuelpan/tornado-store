@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Customer</title>
+    <style type="text/css" media="screen">
+        
+        header {background-color: beige; align-content: center}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome, dear Customer</h1>
+        <h3>Enjoy to fill the data, so we can know you well.</h3>
+    </header>
+    <main>
+        <form action="./done.html" method="POST">
+            <label for="cname">Name</label>
+            <input type="text" name="cname" id="cname" required>
+            <br><br>
+            <label>Sex</label>
+            <input type="radio" id="cman" name="csex" value="man">
+            <label for="cman">Man</label>
+            <input type="radio" id="cfemale" name="csex" value="female">
+            <label for="cfemale">Female</label>
+            <br><br>
+            <label for="cusername">User Name</label>
+            <input type="text" name="cusername" id="cusername" required>
+            <br><br>
+            <label for="cpasswd">Password</label>
+            <input type="password" id="cpasswd" name="cpasswd" required>
+            <br><br>
+            <label for="caddress">Address</label>
+            <textarea id="caddress" name="caddress" rows="5" cols="50" required minlength="30" maxlength="250"></textarea>
+            <br><br>
+            <label for="cphone">Phone</label>
+            <input type="tel" id="cphone" name="cphone" required pattern="[0-9]{5}">
+            <br><br>
+            <label for="cemail">Email</label>
+            <input type="email" id="cemail" name="cemail" required>
+            <br><br>
+            <label for="cwebsite">Website</label>
+            <input type="url" id="cwebsite" name="cwebsite">
+            <br><br>
+            <h4>What Category do You prefer ?</h4>
+            <input type="checkbox" id="claptop" name="ccategory">
+            <label for="claptop">Laptop</label>
+            <input type="checkbox" id="cmonitor" name="ccategory">
+            <label for="cmonitor">Monitor</label>
+            <input type="checkbox" id="cdisk" name="ccategory">
+            <label for="cdisk">Disk</label>
+            <br><br>
+            <input type="checkbox" id="cdesktop" name="ccategory">
+            <label for="cdesktop">Desktop</label>
+            <input type="checkbox" id="ckeyboard" name="ccategory">
+            <label for="ckeyboard">Keyboard</label>
+            <input type="checkbox" id="cspeaker" name="ccategory">
+            <label for="cspeaker">Speaker</label>
+            <br><br>
+            <input type="checkbox" id="cmemory" name="ccategory">
+            <label for="cmemory">Memory</label>
+            <input type="checkbox" id="cmouse" name="ccategory">
+            <label for="cmouse">Mouse</label>
+            <input type="checkbox" id="cfan" name="ccategory">
+            <label for="cfan">Fan</label>
+            <br><br>
+            <input type="checkbox" id="cvga" name="ccategory">
+            <label for="cvga">VGA</label>
+            <input type="checkbox" id="cmainboard" name="ccategory">
+            <label for="cmainboard">Mainboard</label>
+            <input type="checkbox" id="ccasing" name="ccategory">
+            <label for="ccasing">Casing</label>
+            <br><br>
+            <input type="submit" value="Done">
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
